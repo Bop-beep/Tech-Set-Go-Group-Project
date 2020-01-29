@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>repl.it</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+
+  <style>
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #E34192;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #aaa;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #E34192;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #9c2560;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="campaign_info.html">Campaign</a>
+  <a href="form.html">Nominate</a>
+  <a href="whoweare.html">About Twinkl</a>
+</div>
+
+
+<div id="header" class= "row header">
+<div class="col-2">
+  <button class="openbtn" onclick="openNav()" style="min-width:50px">☰</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<div class="col-7">
+  <a href="index.html"><img src="pictures/teacher-of-the-year-white.png" style="width:100%";"></a>
+</div>
+<div class="col-3">
+    <a href="https://www.twinkl.co.uk/"><img src="pictures/twinkl-logo.png" style="width:75%";"> </a>
+</div>
+</div>
+
+    <div class="container-fluid" id="container">
+    <div class="main">
+      <div class="row justify-content-center d-flex card-deck">
+</br>
+          <div class="card view">
+            <div class="hovereffect">
+            <img class="card-img-top" src="pictures/image-apple.jpg" alt="Apple">
+            <div class="overlay">
+            <h2>WHAT?</h2>
+            <p>The teacher of the year competition is to reward teachers for all thier hard work. </p>
+            <a button type="button" class="btn btn-outline-primary" href="whoweare.html">Find out more about Twinkl</button> </a>
+            </div>
+            </div>
+          </div>
+
+          <div class="card view">
+            <div class="hovereffect">
+            <img class="card-img-top" src="pictures/image-children.jpg" alt="children working">
+            <div class="overlay">
+            <h2>WHY?</h2>
+            <p> At Twinkl we understand that the teaching profession is challenging, but we also think it should be rewarding. So we have created the teacher of the year competition to showcase the best teachers and their stories </p>            
+            <a button type="button" class="btn btn-outline-primary" href="whoweare.html">Find out more about Twinkl</button> </a>
+            </div>
+            </div>
+          </div>
+
+          <div class="card view">
+            <div class="hovereffect">
+            <img class="card-img-top" src="pictures/teachers.jpg" alt="teachers chatting">
+            <div class="overlay">
+            <h2>WHO?</h2>
+            <p> Any teacher with a great story and passion behind them. Categories and special mentions for Most Inspirational, Tales from the Above and Beyond and Best Newly Qualified Teacher (NQT). </p>
+            <a button type="button" class="btn btn-outline-primary" href="form.html">Apply now</button> </a>
+            </div>
+            </div>
+          </div>
+
+        </div>
+
+</br>
+        <div class="row justify-content-center d-flex card-deck">
+
+          <div class="card view">
+            <div class="hovereffect">
+            <img class="card-img-top" src="pictures/image-art.jpg" alt="art supplies">
+                <div class="overlay">
+                  <h2> HOW? </h2>
+                  <p>Fill in the form with the story you want to tell. Students, parents, colleagues and senior leadership team (SLT) can send in nominations for teacher of the year</p>
+                  <a button type="button" class="btn btn-outline-primary" href="form.html">Apply now</button> </a>
+                </div>            
+            </div>
+          </div>
+
+          <div class="card view">
+            <div class="hovereffect">
+            <img class="card-img-top" src="pictures/image-play.jpg" alt="clock">
+            <div class="overlay">
+            <h2 >WHEN?</h2>
+            <p> The competition opens Wednesday 12 February and closes Monday 9 March at 5pm</p>
+            <a button type="button" class="btn btn-outline-primary" href="form.html">Apply now</button> </a>
+            </div>
+            </div>
+          </div>
+
+
+          <div class="card view">
+            <div class="hovereffect">
+            <img class="card-img-top" src="pictures/hawaii.jpg" alt="trophy">
+            <div class="overlay">
+            <h2 >THE PRIZE</h2>
+            <p> The winner receives an all-expenses paid 2 week holiday to Hawaii, a lifetime Twinkl Ultimate subscription and a treasure trove of school supplies from our partners. </p>
+            <a button type="button" class="btn btn-outline-primary" href="form.html">Apply now</button> </a>
+            </div>
+            </div>
+          </div>
+      </div>
+
+
+</br>
+
+<div id="footer" class= "row footer">
+<p> Wards Exchange </br>
+197 Ecclesall Road </br>
+Sheffield, S11 8HW, UK </p>
+</br>
+<a href="https://www.twinkl.co.uk/"><img src="pictures/twinkl-logo.png" style="width:25%";"> </a>
+</div>
+
+
+      
+    </div>
+    </div>
+  </body>
+<src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="script.js"> </script>
+    </div>
+  <!-- <script type="text/javascript">
+  alert("javascriptwrite")
+  </script> -->
+  </body>
+</html>

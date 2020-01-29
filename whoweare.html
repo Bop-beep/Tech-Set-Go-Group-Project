@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>repl.it</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid" id="container">
+  <style>
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #E34192;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #aaa;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #E34192;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #9c2560;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+</style>
+</head>
+<body>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html">Home</a>
+  <a href="campaign_info.html">Campaign</a>
+  <a href="form.html">Nominate</a>
+  <a href="whoweare.html">About Twinkl</a>
+</div>
+
+
+<div id="header" class= "row header">
+<div class="col-2">
+  <button class="openbtn" onclick="openNav()" style="min-width:50px">☰</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<div class="col-7">
+  <a href="index.html"><img src="pictures/teacher-of-the-year-white.png" style="width:100%";"></a>
+</div>
+<div class="col-3">
+    <a href="https://www.twinkl.co.uk/"><img src="pictures/twinkl-logo.png" style="width:75%";"> </a>
+</div>
+</div>
+<br>
+<div class="container-fluid" style="background-color:#ffffff; max-width:900px">
+<br> 
+<h2>We're here to 'help those who teach'. It's what brings us to work every day.</h2>
+<p>We're proud to create educational resources that can be used at each step of a child's learning journey.</p>
+
+<p>Our <b>teacher-created resources</b> provide entire schemes of work, lesson planning and assessments right through to online educational games, augmented reality and so much more.</p>
+
+<p>We have <b>over 525,000 resources </b>and new content gets added every day.You'll find we've normally got what you need before you even know you want it.</p>
+
+<h2>We're all inspired to support teachers and learners, around the world.</h2>
+<p>Everything we do supports the global teaching community and we're committed to transforming people's lives through education.</p>
+
+<p>We support and <b>work with educators across the world</b>, including primary and secondary teachers, childminders, nursery workers, home educators and parents.</p>
+
+<p>All Twinkl resources are <b>teacher-made</b> and can be used by anyone, anywhere - making learning accessible to all.</p>
+
+<p>We also tailor resources to a number of curriculums, including the UK National Curriculums. You can find a full list of those we cover right<a href="https://www.twinkl.co.uk/resources/international-schools"> here.</a></p>
+
+<h2>Why Twinkl?</h2>
+<p> discover the benefits of using Twinkl, please read our blog post -<a href="https://www.twinkl.co.uk/blog/why-should-i-sign-up-to-twinkl-this-year"> Why should I sign up to Twinkl this year?</a></p>
+
+<div id="footer" class= "row footer">
+<p> Wards Exchange </br>
+197 Ecclesall Road </br>
+Sheffield, S11 8HW, UK </p>
+</br>
+<a href="https://www.twinkl.co.uk/"><img src="pictures/twinkl-logo.png" style="width:25%";"> </a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    
+</body>
+</html>
